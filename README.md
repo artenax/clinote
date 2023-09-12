@@ -16,10 +16,15 @@ CLInote allows you to:
 
 From source:
 ```
-go get -v github.com/TcM1911/clinote/cmd
+git clone https://github.com/artenax/clinote
+cd clinote/cmd
+export GOARCH=386
+export GOOS=linux
+go build -ldflags="-s -w"
+
 ```
 
-Download pre-build binary from the [release page](https://github.com/TcM1911/clinote/releases).
+Download pre-build binary from the [release page](https://github.com/artenax/clinote/releases).
 
 ## Authorize to Evernote via OAuth
 
